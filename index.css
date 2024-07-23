@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --x: #3498db;
+
+}
+
+/* nav */
+#logo {
+    font-size: 36px;
+    font-weight: 600;
+    text-shadow: 2px 1px 2px black;
+    margin-bottom: 5px;
+}
+
+#logo span {
+    color: var(--x);
+}
+
+.navbar-nav {
+    margin-left: 100px;
+}
+
+.nav-item {
+    margin-left: 13%;
+}
+
+
+
+.nav-link {
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+
+    border-radius: 3px;
+    transition: 0.5s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--x);
+    color: white;
+}
+
+.navbar-toggler span {
+    color: var(--x);
+}
+
+@media(max-width:400px) {
+    .navbar-collapse {
+        margin-left: -140px;
+
+
+    }
+}
+
+/* home */
+#home {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.69)), url(./images/pexels-chaitaastic-2083840.jpg);
+    height: 120vh;
+    background-position: fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.content h5 {
+    color: white;
+    font-size: 40px;
+    font-weight: 550;
+    text-shadow: 3px 2px 2px black;
+}
+
+.content h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: 900;
+    text-shadow: 3px 2px 2px black;
+    margin-top: 5px;
+}
+
+.changecontent::after {
+    content: ' ';
+    color: var(--x);
+    text-shadow: 3px 2px 2px black;
+    animation: changetext 10s infinite linear;
+}
+
+@keyframes changetext {
+    0% {
+        content: "India";
+    }
+
+    10% {
+        content: "Japan";
+    }
+
+    20% {
+        content: " Nepal";
+    }
+
+    30% {
+        content: "Spain";
+    }
+
+    40% {
+        content: "Chile";
+    }
+
+    50% {
+        content: "Italy";
+    }
+
+    60% {
+        content: "Libya";
+    }
+
+    70% {
+        content: "U A E";
+    }
+
+    80% {
+        content: "Qatar";
+    }
+
+    90% {
+        content: "China";
+    }
+
+    100% {
+        content: "Malta";
+    }
+
+}
+
+.content p {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.btn {
+    padding: 10px;
+    background: white;
+    color: black;
+    letter-spacing: 2px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.btn:hover {
+    background: var(--x);
+    color: white;
+}
+
+/* book */
+#book {
+    background-color: rgba(2, 40, 228, 0.112);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+
+}
+
+/* Main Text Styles */
+.main-text {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.main-text h1 {
+    font-size: 36px;
+    color: #333;
+
+}
+
+.main-text h1 span {
+    color: var(--x);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+#book img {
+    width: 100%;
+    transition: transform 0.3s;
+    height: 100%;
+
+
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+
+/* Form Styles */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+
+}
+
+form .form-control:focus {
+    border-color: var(--x);
+    outline: none;
+}
+
+.submit {
+    background: var(--x);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+
+
+}
+
+.submit:hover {
+    background: #2980b9;
+}
+
+/* packages */
+#packages .card-body {
+    height: 330px;
+}
+
+#packages p {
+    text-align: justify;
+}
+
+.checked {
+    color: gold;
+}
+
+/* services */
+#services {
+    background-color: rgba(2, 40, 228, 0.112);
+}
+
+#services p {
+    text-align: justify;
+}
+
+#services i {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 50px;
+
+}
+
+#about {
+    background-color: rgba(2, 40, 228, 0.112);
+}
+
+/* footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.593);
+
+    overflow-x: hidden;
+}
+
+.links {
+    display: block;
+    font-size: 20px;
+    color: rgb(84, 45, 45);
+    text-decoration: none;
+}
+
+.links i {
+    color: black;
+    padding-right: 1.5rem;
+    transition: padding-right 0.3s ease;
+}
+
+.links:hover i {
+    padding-right: 2rem;
+}
+
+
+.share a {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    color: rgb(0, 0, 0);
+    margin-right: 0.2rem;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+.share a:hover {
+    background-color: var(--x);
+}

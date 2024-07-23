@@ -229,12 +229,17 @@ form {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 form .form-control {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 15px;
-
 }
 
 form .form-control:focus {
@@ -249,8 +254,6 @@ form .form-control:focus {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-
-
 }
 
 .submit:hover {

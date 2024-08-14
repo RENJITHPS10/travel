@@ -204,7 +204,6 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgb(0, 0, 0);
-    transition: transform 0.3s;
     height: 100%;
 }
 
@@ -263,10 +262,14 @@ form .form-control:focus {
 /* packages */
 #packages .card-body {
     height: 330px;
+   
 }
 
 #packages p {
     text-align: justify;
+}
+#packages img{
+    transition: transform 0.3s;
 }
 
 .checked {
@@ -288,9 +291,16 @@ form .form-control:focus {
     padding-top: 50px;
 
 }
+/* gallery */
+#gallery img{
+    transition: transform 0.3s;
+}
 
 #about {
     background-color: rgba(2, 40, 228, 0.112);
+}
+#about img{
+    transition: transform 0.3s;
 }
 
 /* footer */
